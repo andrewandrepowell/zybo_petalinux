@@ -1,0 +1,12 @@
+20:23:10 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_1/zybo_petalinux_1.sdk/temp_xsdb_launch_script.tcl
+20:23:14 INFO  : XSDB server has started successfully.
+20:23:15 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_1/zybo_petalinux_1.sdk/block_design_wrapper.hdf.
+13:47:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1469036840000,  Project:1468973005000
+13:47:41 INFO  : Project block_design_wrapper_hw_platform_0's source hardware specification located at /opt/Xilinx/Projects/zybo_petalinux_1/zybo_petalinux_1.sdk/block_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:47:46 INFO  : Copied contents of /opt/Xilinx/Projects/zybo_petalinux_1/zybo_petalinux_1.sdk/block_design_wrapper.hdf into /block_design_wrapper_hw_platform_0/system.hdf.
+13:47:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:47:52 INFO  : Clearing existing target manager status.
+13:47:54 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:47:54 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:30:32 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
