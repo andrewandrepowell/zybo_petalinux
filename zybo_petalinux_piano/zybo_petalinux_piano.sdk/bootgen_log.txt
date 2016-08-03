@@ -1,0 +1,68 @@
+[WARNING]: '-debug' option will be deprecated, please use '-log' option
+[INFO]   : Command line parsing completed successfully
+[INFO]   : Filename: /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/zynq_fsbl.elf
+[INFO]   : Parsing Partition Data
+[INFO]   : Filename: /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/block_design_wrapper.bit
+[INFO]   : Parsing Partition Data
+[INFO]   : Filename: /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/u-boot.elf
+[INFO]   : Parsing Partition Data
+[INFO]   : Filename: /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/image.ub
+[INFO]   :  Offset: 520000
+[INFO]   : Parsing Partition Data
+[INFO]   : BIF file parsing completed successfully
+[INFO]   : Building image - the_ROM_image
+[INFO]   : Building the Partition Header Table
+[INFO]   : After build 
+           -- Dump of Binary Image ----
+           00000000 Len: 000008a0 Res: 00000000 "BootHeader"
+           00000000 Len: 00000040 Res: 00000000 "ImageHeaderTable"
+           00000000 Len: 00000024 Res: 00000000 "ImageHeader zynq_fsbl.elf"
+           00000000 Len: 00000030 Res: 00000000 "ImageHeader block_design_wrapper.bit"
+           00000000 Len: 00000020 Res: 00000000 "ImageHeader u-boot.elf"
+           00000000 Len: 00000020 Res: 000002c0 "ImageHeader image.ub"
+           00000000 Len: 00000040 Res: 00000000 "PartitionHeader zynq_fsbl.elf.0"
+           00000000 Len: 00000040 Res: 00000000 "PartitionHeader block_design_wrapper.bit.0"
+           00000000 Len: 00000040 Res: 00000000 "PartitionHeader u-boot.elf.0"
+           00000000 Len: 00000040 Res: 00000000 "PartitionHeader image.ub.0"
+           00000000 Len: 00000040 Res: 00000980 "PartitionHeader Null"
+           00000000 Len: 0001000c Res: 00000000 "zynq_fsbl.elf.0"
+           00000000 Len: 001fcba0 Res: 00000000 "block_design_wrapper.bit.0"
+           00000000 Len: 0004830c Res: 00000000 "u-boot.elf.0"
+           00520000 Len: 0036c5e0 Res: 00000000 "image.ub.0"
+           -- End of Dump
+[INFO]   : After align 
+           -- Dump of Binary Image ----
+           00000000 Len: 000008a0 Res: 00000000 "BootHeader"
+           000008c0 Len: 00000040 Res: 00000000 "ImageHeaderTable"
+           00000900 Len: 00000024 Res: 00000000 "ImageHeader zynq_fsbl.elf"
+           00000940 Len: 00000030 Res: 00000000 "ImageHeader block_design_wrapper.bit"
+           00000980 Len: 00000020 Res: 00000000 "ImageHeader u-boot.elf"
+           000009c0 Len: 00000020 Res: 000002c0 "ImageHeader image.ub"
+           00000c80 Len: 00000040 Res: 00000000 "PartitionHeader zynq_fsbl.elf.0"
+           00000cc0 Len: 00000040 Res: 00000000 "PartitionHeader block_design_wrapper.bit.0"
+           00000d00 Len: 00000040 Res: 00000000 "PartitionHeader u-boot.elf.0"
+           00000d40 Len: 00000040 Res: 00000000 "PartitionHeader image.ub.0"
+           00000d80 Len: 00000040 Res: 00000980 "PartitionHeader Null"
+           00001700 Len: 0001000c Res: 00000000 "zynq_fsbl.elf.0"
+           00011740 Len: 001fcba0 Res: 00000000 "block_design_wrapper.bit.0"
+           0020e300 Len: 0004830c Res: 00000000 "u-boot.elf.0"
+           00520000 Len: 0036c5e0 Res: 00000000 "image.ub.0"
+           -- End of Dump
+[INFO]   : After Link 
+           -- Dump of Binary Image ----
+           00000000 Len: 000008a0 Res: 00000000 "BootHeader"
+           000008c0 Len: 00000040 Res: 00000000 "ImageHeaderTable"
+           00000900 Len: 00000024 Res: 00000000 "ImageHeader zynq_fsbl.elf"
+           00000940 Len: 00000030 Res: 00000000 "ImageHeader block_design_wrapper.bit"
+           00000980 Len: 00000020 Res: 00000000 "ImageHeader u-boot.elf"
+           000009c0 Len: 00000020 Res: 000002c0 "ImageHeader image.ub"
+           00000c80 Len: 00000040 Res: 00000000 "PartitionHeader zynq_fsbl.elf.0"
+           00000cc0 Len: 00000040 Res: 00000000 "PartitionHeader block_design_wrapper.bit.0"
+           00000d00 Len: 00000040 Res: 00000000 "PartitionHeader u-boot.elf.0"
+           00000d40 Len: 00000040 Res: 00000000 "PartitionHeader image.ub.0"
+           00000d80 Len: 00000040 Res: 00000980 "PartitionHeader Null"
+           00001700 Len: 0001000c Res: 00000000 "zynq_fsbl.elf.0"
+           00011740 Len: 001fcba0 Res: 00000000 "block_design_wrapper.bit.0"
+           0020e300 Len: 0004830c Res: 00000000 "u-boot.elf.0"
+           00520000 Len: 0036c5e0 Res: 00000000 "image.ub.0"
+           -- End of Dump

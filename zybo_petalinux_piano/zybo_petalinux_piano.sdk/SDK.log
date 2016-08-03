@@ -1,0 +1,40 @@
+22:36:33 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/temp_xsdb_launch_script.tcl
+22:36:37 INFO  : XSDB server has started successfully.
+22:36:38 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/block_design_wrapper.hdf.
+22:40:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:53:04 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin
+06:53:04 INFO  : Creating new bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+06:53:05 INFO  : Bootgen command execution is done.
+06:59:02 ERROR : (XSDB Server)child process exited abnormally
+
+06:59:53 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+06:59:53 INFO  : Bootgen command execution is done.
+07:06:06 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:06:06 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:06:09 INFO  : Bootgen command execution is done.
+07:08:10 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:08:10 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:08:10 INFO  : Bootgen command execution is done.
+07:10:01 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:10:01 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:10:05 INFO  : Bootgen command execution is done.
+07:12:01 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:12:01 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:12:05 INFO  : Bootgen command execution is done.
+07:21:39 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:21:39 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:21:40 INFO  : Bootgen command execution is done.
+07:23:56 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:23:56 INFO  : Overwriting existing bif file /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/output.bif
+07:23:57 INFO  : Bootgen command execution is done.
+07:46:13 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/BOOT.bin -w on
+07:46:13 INFO  : Bootgen command execution is done.
+08:48:24 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/BOOT.bin
+08:48:24 INFO  : Creating new bif file /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/output.bif
+08:48:24 INFO  : Bootgen command execution is done.
+09:13:12 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/BOOT.bin -w on
+09:13:13 INFO  : Bootgen command execution is done.
+10:19:16 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/BOOT.bin -w on
+10:19:17 INFO  : Bootgen command execution is done.
+10:59:43 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/BOOT.bin -w on
+10:59:43 INFO  : Bootgen command execution is done.

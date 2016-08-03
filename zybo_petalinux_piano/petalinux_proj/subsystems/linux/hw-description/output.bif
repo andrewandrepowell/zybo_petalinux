@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/zynq_fsbl.elf
+	/opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/block_design_wrapper.bit
+	/opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/u-boot.elf
+	[offset = 0x520000]/opt/Xilinx/Projects/zybo_petalinux_piano/petalinux_proj/images/linux/image.ub
+}

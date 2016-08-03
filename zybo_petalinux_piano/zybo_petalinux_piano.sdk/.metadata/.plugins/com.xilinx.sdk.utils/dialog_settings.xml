@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk" key="bootgen_files_selection"/>
+	<item value="/opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk" key="zynq_flash_files_selection"/>
+	<item value="/opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk" key="last_stored_selection"/>
+</section>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Aug  2 21:08:50 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="557118c2b2164331a93e5936d0997a41" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoAssignAddress" value="2" type="JavaHandler"/>
+<property name="AutoConnectPort" value="3" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="ManageCompositeTargets" value="4" type="JavaHandler"/>
+<property name="RegenerateRSBLayout" value="1" type="JavaHandler"/>
+<property name="SaveRSBDesign" value="5" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+<property name="ValidateRSBDesign" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="Number of Master Interfaces (NUM_MI" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, axi_pmodmic_spi_0_v1.0, 16" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, axi_pmodmic_spi_0_v1.0, 16, axi_pmodmic_spi_0_v1.0, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, axi_pmodmic_spi_0_v1.0, 16, axi_pmodmic_spi_0_v1.0, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, Address Editor_auto_assign_address_rsb" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, Make External" value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, Edit in IP Packager" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, Parameters, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PORT_MAPPING, Port Mapping, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, axi_i2s_adi - Behavioral (axi_i2s_adi.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, block_design_wrapper - STRUCTURE (block_design_wrapper.vhd" value="9" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Generate Block Design], 8, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@29541c6c, 23" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@4d13b0ae, 22" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@5db4a57b, 18" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@5f828f1e, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@67ec77c2, 12" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@77892fd3, 13" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@7a18b83a, 5" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfacePortMappingPanel_IPS_PHYSICAL_PORTS, ui.data.coregen.ca@bf87b23, 2" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_DISCARD_USER_CREATED_MESSAGES, Discard User Created Messages" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, Message Severity" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, generate_target all [get_files  /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.srcs/sources_1/bd/block_design/block_design.bd]. , [Designutils 20-1595] In entity m00_couplers_imp_1X21ZCV, connectivity of net m00_couplers_to_m00_couplers_AWREADY[0] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: .    inout M_AXI_awready[0].    inout S_AXI_awready[0]. . Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.. ], 3, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, generate_target all [get_files  /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.srcs/sources_1/bd/block_design/block_design.bd]. , [Designutils 20-1595] In entity m00_couplers_imp_1X21ZCV, connectivity of net m00_couplers_to_m00_couplers_AWREADY[0] cannot be represented in VHDL. VHDL lacks syntax to connect the following inout terminals to a differently-named net: .    inout M_AXI_awready[0].    inout S_AXI_awready[0]. . Resolution: Check whether terminals really need inout direction and substitute input or output as needed. It may also be possible to rename the net to match the terminal.. ], 3, true, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, open_project /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.xpr. , [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.. ], 4, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Ports and Interfaces, 4" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, S_AXI ; slave ;  ; false ;  ;  ;  ;  ;  ;  ; , 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, S_AXI ; slave ;  ; false ;  ;  ;  ;  ;  ;  ; , 0, S_AXI, 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, S_AXI ; slave ;  ; false ;  ;  ;  ;  ;  ;  ; , 0, S_AXI, 0, true, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, Generate" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, IP Documentation" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, Expand/Collapse" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="28" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="25" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
