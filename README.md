@@ -32,6 +32,8 @@ SaintSmart LCD 2004 through the terminal. Libraries from Arduino and SaintSmart 
 // zybo_petalinux_piano //
 //////////////////////////
 
+Video Demonstration Link: https://youtu.be/wB7TfsBR1Fw
+
 Running "mywave" allows the user to play an octave of the C scale through the Zybo's audio codec. Optionally, the user can view a sample from the Digilent PmodMIC. The original plan was to record sounds with the PmodMIC, however real-time recording with the SPIDev SysFs driver proved problematic in a pure software application in Linux. In a future project, a core that includes a FIFO needs to be developed. 
 
 This project also takes advantage of the ADI AXI I2S core taken from the Digilent Zybo Base Example. A Linux user-space driver ( i.e. a library that needs the Linux API mmap(2) to map virtual memory to physical memory ) is created so that the application can access the ADI core. 
