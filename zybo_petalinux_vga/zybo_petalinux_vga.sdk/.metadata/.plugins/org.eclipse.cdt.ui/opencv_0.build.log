@@ -1,0 +1,21 @@
+12:32:39 **** Auto Build of configuration Debug for project opencv_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_0/src/xilinx" -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -I"/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_0/src/opencv" -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: opencv_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -Wl,--as-needed -o "opencv_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmisc.o ./src/linuxmmap.o ./src/main.o   -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: opencv_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size opencv_0.elf  |tee "opencv_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2732711	  32732	 612272	3377715	 338a33	opencv_0.elf
+Finished building: opencv_0.elf.size
+ 
+
+12:32:40 Build Finished (took 1s.41ms)
+

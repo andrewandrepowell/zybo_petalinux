@@ -10,12 +10,12 @@
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.cache/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
@@ -50,16 +50,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="ip/block_design_auto_pc_0/block_design_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="block_design_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="hw_handoff/block_design.hwh"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="hw_handoff/block_design_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="hdl/block_design.hwdef"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="ip/block_design_axi_i2s_adi_0_0/block_design_axi_i2s_adi_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="ip/block_design_processing_system7_0_0/block_design_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="ip/block_design_proc_sys_reset_0_0/block_design_proc_sys_reset_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="hdl/block_design.vhd"/>
-        <CompFileExtendedInfo CompFileName="block_design.bd" FileRelPathName="ip/block_design_axi_interconnect_0_0/block_design_axi_interconnect_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/block_design/hdl/block_design_wrapper.vhd">
         <FileInfo>

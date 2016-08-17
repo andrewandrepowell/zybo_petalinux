@@ -1,0 +1,293 @@
+#include <iostream>
+#include <stdint.h>
+#include <stdexcept>
+#include "xparameters.h"
+#include "display_ctrl.h"
+#include "linuxmmap.h"
+using namespace std;
+
+/*--------------------------*/
+/*        Constants         */
+/*--------------------------*/
+
+#define DISPLAY_MAX_FRAME 		( 1920*1080 )
+#define DISPLAY_STRIDE 			( 1920*sizeof( uint32_t ) )
+#define DISPLAY_IS_HDMI			( false )
+#define VDMA_DEVICE_ID 			XPAR_AXI_VDMA_0_DEVICE_ID
+#define VDMA_FRAME_BUFF_ADDR	( 0x30000000 ) /* Physical Address */
+
+/*--------------------------*/
+/*        Type Defs         */
+/*--------------------------*/
+
+typedef uint32_t ( vdma_framebuff )[ DISPLAY_NUM_FRAMES ][ DISPLAY_MAX_FRAME ];
+
+/*--------------------------*/
+/*       Declarations       */
+/*--------------------------*/
+
+/* Object that represents the Digilent AXI Display Controller. */
+DisplayCtrl display_obj;
+
+/* The following virtual addresses need to be defined such that
+They are mapped to the appropriate physical addresses! */
+linuxmmap dispctrl_mmap_obj( XPAR_AXI_DISPCTRL_0_S_AXI_BASEADDR, ( 0x10000 ) );
+linuxmmap vdma_mmap_obj( XPAR_AXI_VDMA_0_BASEADDR, ( 0x10000 ) );
+linuxmmap framebuff_mmap_obj( VDMA_FRAME_BUFF_ADDR, sizeof( vdma_framebuff ) );
+
+/* Reference the memory dedicated to the frame buffers. */
+vdma_framebuff& framebuff_arr = *( reinterpret_cast<vdma_framebuff*>( framebuff_mmap_obj.getvaddr() ) );
+uint32_t* vir_framebuff_ptr[ DISPLAY_NUM_FRAMES ];
+uint32_t* phy_framebuff_ptr[ DISPLAY_NUM_FRAMES ];
+
+/*--------------------------*/
+/*     Main Application     */
+/*--------------------------*/
+
+void DisplayDemoPrintTest(u32 *frame, u32 width, u32 height, u32 stride, int pattern);
+
+int main()
+{
+	/* Configure display. */
+	cout << "Configuring display..." << endl;
+	{
+		/* Modifications need to be done to the AXI VDMA's configuration table. */
+		extern XAxiVdma_Config XAxiVdma_ConfigTable[];
+		XAxiVdma_ConfigTable[ VDMA_DEVICE_ID ].BaseAddress = vdma_mmap_obj.getvaddr();
+
+		/* There needs to be pointers that point to each of the frames. Since the display
+		driver needs to configure the VDMA with physical pointers, both the virtual and
+		physical addresses are needed. */
+		for ( int each_frame = 0; each_frame < DISPLAY_NUM_FRAMES; each_frame++ )
+		{
+			vir_framebuff_ptr[ each_frame ] = framebuff_arr[ each_frame ];
+			phy_framebuff_ptr[ each_frame ] = reinterpret_cast<uint32_t*>( VDMA_FRAME_BUFF_ADDR +
+					( each_frame * DISPLAY_MAX_FRAME * sizeof( uint32_t ) ) );
+		}
+
+		/* Configure the display driver. */
+		int Status;
+		Status = DisplayInitialize( &display_obj,
+				VDMA_DEVICE_ID,
+				dispctrl_mmap_obj.getvaddr(),
+				DISPLAY_IS_HDMI,
+				vir_framebuff_ptr, phy_framebuff_ptr,
+				DISPLAY_STRIDE );
+		if ( Status!= XST_SUCCESS )
+			throw runtime_error( "The display driver wasn't properly configured." );
+
+
+		/* Set the resolution. */
+		DisplaySetMode( &display_obj, &VMODE_1280x720 );
+
+		/* Start display. */
+		Status = DisplayStart( &display_obj );
+		if ( Status!= XST_SUCCESS )
+			throw runtime_error( "The display could not be started." );
+	}
+
+	/* Configure patterns on the frame buffers .*/
+	cout << "Configuring frame buffers..." << endl;
+	{
+		for ( int each_frame = 0; each_frame < DISPLAY_NUM_FRAMES; each_frame++ )
+			DisplayDemoPrintTest(
+					display_obj.vframePtr[ each_frame ],
+					display_obj.vMode.width, display_obj.vMode.height,
+					display_obj.stride, each_frame );
+	}
+
+	/* Run main application. */
+	cout << "Running main application. Hit enter to change frames. Hit 'q' and then enter to end program..." << endl;
+	{
+		int curr_frame = 0;
+		char val = cin.get();
+		while ( val != 'q' )
+		{
+			cout << "Frame changed" << endl;
+			curr_frame = ( curr_frame < ( DISPLAY_NUM_FRAMES-1 ) ) ? curr_frame+1 : 0;
+			DisplayChangeFrame( &display_obj, curr_frame );
+			val = cin.get();
+		}
+	}
+
+	return 0;
+}
+
+/* The following function was taken directly from the Digilent Base Design. */
+void DisplayDemoPrintTest(u32 *frame, u32 width, u32 height, u32 stride, int pattern)
+{
+	u32 xcoi, ycoi;
+	u32 iPixelAddr;
+	u32 wStride;
+	u32 wRed, wBlue, wGreen, wColor;
+	u32 wCurrentInt;
+	double fRed, fBlue, fGreen, fColor;
+	u32 xLeft, xMid, xRight, xInt;
+	u32 yMid, yInt;
+	double xInc, yInc;
+
+
+	switch (pattern)
+	{
+	case 0:
+
+		wStride = stride / 4; /* Find the stride in 32-bit words */
+
+		xInt = width / 4; //Four intervals, each with width/4 pixels
+		xLeft = xInt;
+		xMid = xInt * 2;
+		xRight = xInt * 3;
+		xInc = 256.0 / ((double) xInt); //256 color intensities are cycled through per interval (overflow must be caught when color=256.0)
+
+		yInt = height / 2; //Two intervals, each with width/2 lines
+		yMid = yInt;
+		yInc = 256.0 / ((double) yInt); //256 color intensities are cycled through per interval (overflow must be caught when color=256.0)
+
+		fBlue = 0.0;
+		fRed = 256.0;
+		for(xcoi = 0; xcoi < width; xcoi++)
+		{
+			/*
+			 * Convert color intensities to integers < 256, and trim values >=256
+			 */
+			wRed = (fRed >= 256.0) ? 255 : ((u32) fRed);
+			wBlue = (fBlue >= 256.0) ? 255 : ((u32) fBlue);
+
+			wColor = (wRed << BIT_DISPLAY_RED) | (wBlue << BIT_DISPLAY_BLUE);
+			iPixelAddr = xcoi;
+			fGreen = 0.0;
+			for(ycoi = 0; ycoi < height; ycoi++)
+			{
+				wGreen = (fGreen >= 256.0) ? 255 : ((u32) fGreen);
+				frame[iPixelAddr] = wColor | (wGreen << BIT_DISPLAY_GREEN);
+				if (ycoi < yMid)
+				{
+					fGreen += yInc;
+				}
+				else
+				{
+					fGreen -= yInc;
+				}
+
+				/*
+				 * This pattern is printed one vertical line at a time, so the address must be incremented
+				 * by the stride instead of just 1.
+				 */
+				iPixelAddr += wStride;
+			}
+
+			if (xcoi < xLeft)
+			{
+				fBlue = 0.0;
+				fRed -= xInc;
+			}
+			else if (xcoi < xMid)
+			{
+				fBlue += xInc;
+				fRed += xInc;
+			}
+			else if (xcoi < xRight)
+			{
+				fBlue -= xInc;
+				fRed -= xInc;
+			}
+			else
+			{
+				fBlue += xInc;
+				fRed = 0;
+			}
+		}
+
+		break;
+	case 1:
+		wStride = stride / 4; /* Find the stride in 32-bit words */
+
+		xInt = width / 7; //Seven intervals, each with width/7 pixels
+		xInc = 256.0 / ((double) xInt); //256 color intensities per interval. Notice that overflow is handled for this pattern.
+
+		fColor = 0.0;
+		wCurrentInt = 1;
+		for(xcoi = 0; xcoi < width; xcoi++)
+		{
+			if (wCurrentInt & 0b001)
+				fRed = fColor;
+			else
+				fRed = 0.0;
+
+			if (wCurrentInt & 0b010)
+				fBlue = fColor;
+			else
+				fBlue = 0.0;
+
+			if (wCurrentInt & 0b100)
+				fGreen = fColor;
+			else
+				fGreen = 0.0;
+
+			/*
+			 * Just draw white in the last partial interval (when width is not divisible by 7)
+			 */
+			if (wCurrentInt > 7)
+			{
+				wColor = 0x00FFFFFF;
+			}
+			else
+			{
+				wColor = ((u32) fRed << BIT_DISPLAY_RED) | ((u32) fBlue << BIT_DISPLAY_BLUE) | ( (u32) fGreen << BIT_DISPLAY_GREEN);
+			}
+			iPixelAddr = xcoi;
+
+			for(ycoi = 0; ycoi < height; ycoi++)
+			{
+				frame[iPixelAddr] = wColor;
+				/*
+				 * This pattern is printed one vertical line at a time, so the address must be incremented
+				 * by the stride instead of just 1.
+				 */
+				iPixelAddr += wStride;
+			}
+
+			fColor += xInc;
+			if (fColor >= 256.0)
+			{
+				fColor = 0.0;
+				wCurrentInt++;
+			}
+		}
+		break;
+	case 2: /* Andrew Powell - Check out my awesome, cool pattern! Behold my artistic prowess! */
+		wStride = stride / 4;
+		for(xcoi = 0; xcoi < width; xcoi++)
+		{
+			fRed = ( ( double ) xcoi / width ) * 255.0;
+			iPixelAddr = xcoi;
+			for(ycoi = 0; ycoi < height; ycoi++)
+			{
+				fBlue = ( ( double ) ycoi / height ) * 255.0;
+				fGreen = ( ( double ) ( ( width-1-xcoi ) * ( height-1-ycoi ) ) /
+						( double ) ( width*height ) ) * 255.0;
+				wColor =
+						( ( u32 ) fRed << BIT_DISPLAY_RED ) |
+						( ( u32 ) fBlue << BIT_DISPLAY_BLUE ) |
+						( ( u32 ) fGreen << BIT_DISPLAY_GREEN );
+				frame[iPixelAddr] = wColor;
+				iPixelAddr += wStride;
+			}
+		}
+		break;
+	default :
+		throw runtime_error( "Error: invalid pattern passed to DisplayDemoPrintTest" );
+	}
+}
+
+void outbyte (char8 c)
+{
+	cout << c;
+}
+
+char8 inbyte(void)
+{
+	char c;
+	cin >> c;
+	return c;
+}

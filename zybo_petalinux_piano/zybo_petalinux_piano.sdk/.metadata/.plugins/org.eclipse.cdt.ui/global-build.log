@@ -1,0 +1,21 @@
+20:31:23 **** Build of configuration Debug for project mywave ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: mywave.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++  -o "mywave.elf"  ./src/main.o   
+Finished building target: mywave.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size mywave.elf  |tee "mywave.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1020	    304	      4	   1328	    530	mywave.elf
+Finished building: mywave.elf.size
+ 
+20:31:25 **** Auto Build of configuration Debug for project mywave ****
+make all 
+make: Nothing to be done for 'all'.

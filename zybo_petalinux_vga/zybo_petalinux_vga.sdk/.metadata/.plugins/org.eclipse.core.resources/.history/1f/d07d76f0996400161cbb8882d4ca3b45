@@ -1,0 +1,173 @@
+#include <iostream>
+#include <stdint.h>
+#include <stdexcept>
+#include "xparameters.h"
+#include "display_ctrl.h"
+#include "linuxmmap.h"
+#include "linuxmisc.h"
+#include "xil_printf.h"
+#include "opencv2/core/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace std;
+using namespace cv;
+
+/*--------------------------*/
+/*        Constants         */
+/*--------------------------*/
+
+#define DISPLAY_MAX_FRAME 		( 1920*1080 )
+#define DISPLAY_STRIDE 			( 1920*sizeof( uint32_t ) )
+#define DISPLAY_IS_HDMI			( false )
+#define VDMA_DEVICE_ID 			XPAR_AXI_VDMA_0_DEVICE_ID
+#define VDMA_FRAME_BUFF_ADDR	( 0x30000000 ) /* Physical Address */
+
+/*--------------------------*/
+/*        Type Defs         */
+/*--------------------------*/
+
+typedef uint32_t ( vdma_framebuff )[ DISPLAY_NUM_FRAMES ][ DISPLAY_MAX_FRAME ];
+
+/*--------------------------*/
+/*       Declarations       */
+/*--------------------------*/
+
+/* Object that represents the Digilent AXI Display Controller. */
+DisplayCtrl display_obj;
+
+/* The following virtual addresses need to be defined such that
+They are mapped to the appropriate physical addresses! */
+linuxmmap dispctrl_mmap_obj( XPAR_AXI_DISPCTRL_0_S_AXI_BASEADDR, ( 0x10000 ) );
+linuxmmap vdma_mmap_obj( XPAR_AXI_VDMA_0_BASEADDR, ( 0x10000 ) );
+linuxmmap framebuff_mmap_obj( VDMA_FRAME_BUFF_ADDR, sizeof( vdma_framebuff ) );
+
+/* Reference the memory dedicated to the frame buffers. */
+vdma_framebuff& framebuff_arr = *( reinterpret_cast<vdma_framebuff*>( framebuff_mmap_obj.getvaddr() ) );
+uint32_t* vir_framebuff_ptr[ DISPLAY_NUM_FRAMES ];
+uint32_t* phy_framebuff_ptr[ DISPLAY_NUM_FRAMES ];
+
+/* OpenCV objects. */
+Mat framebuff_mat[ DISPLAY_NUM_FRAMES ];
+int nframes;
+
+/*--------------------------*/
+/*           Main           */
+/*--------------------------*/
+
+int main( int argc, char** argv )
+{
+	/* Check to make sure the number of inputs is correct. */
+	if ( !( ( argc >= 2 ) && ( argc <= ( DISPLAY_NUM_FRAMES+1 ) ) ) )
+		throw runtime_error( "usage: DisplayImage.out <Image_Path> [<Image_Path> <Image_Path>]" );
+	nframes = argc-1;
+
+	/* Configure display. */
+	cout << "Configuring display..." << endl;
+	{
+		/* Modifications need to be done to the AXI VDMA's configuration table. */
+		extern XAxiVdma_Config XAxiVdma_ConfigTable[];
+		XAxiVdma_ConfigTable[ VDMA_DEVICE_ID ].BaseAddress = vdma_mmap_obj.getvaddr();
+
+		/* There needs to be pointers that point to each of the frames. Since the display
+		driver needs to configure the VDMA with physical pointers, both the virtual and
+		physical addresses are needed. */
+		for ( int each_frame = 0; each_frame < DISPLAY_NUM_FRAMES; each_frame++ )
+		{
+			vir_framebuff_ptr[ each_frame ] = framebuff_arr[ each_frame ];
+			phy_framebuff_ptr[ each_frame ] = reinterpret_cast<uint32_t*>( VDMA_FRAME_BUFF_ADDR +
+					( each_frame * DISPLAY_MAX_FRAME * sizeof( uint32_t ) ) );
+		}
+
+		/* Configure the display driver. */
+		int Status;
+		Status = DisplayInitialize( &display_obj,
+				VDMA_DEVICE_ID,
+				dispctrl_mmap_obj.getvaddr(),
+				DISPLAY_IS_HDMI,
+				vir_framebuff_ptr, phy_framebuff_ptr,
+				DISPLAY_STRIDE );
+		if ( Status!= XST_SUCCESS )
+			throw runtime_error( "The display driver wasn't properly configured." );
+
+
+		/* Set the resolution. */
+		DisplaySetMode( &display_obj, &VMODE_1280x720 );
+
+		/* Start display. */
+		Status = DisplayStart( &display_obj );
+		if ( Status!= XST_SUCCESS )
+			throw runtime_error( "The display could not be started." );
+	}
+
+	/* Configure opencv frames with framebuffer. */
+	cout << "Configuring framebuffer with opencv Mats..." << endl;
+	{
+		const int sizes[] =
+		{
+				static_cast<const int>( display_obj.vMode.height ),
+				static_cast<const int>( display_obj.vMode.width )
+		};
+		const size_t steps[] = { DISPLAY_STRIDE };
+		for ( int each_frame = 0; each_frame < DISPLAY_NUM_FRAMES; each_frame++ )
+		{
+			framebuff_mat[ each_frame ] = Mat(
+					2, sizes,
+					CV_8UC(4),
+					reinterpret_cast<void*>( display_obj.vframePtr[ each_frame ] ),
+					steps );
+			framebuff_mat[ each_frame ] = Scalar( 0, 0, 0 );
+		}
+	}
+
+	/* Load images with OpenCV. */
+	cout << "Loading images..." << endl;
+	for ( int each_image=0; each_image<nframes; each_image++ )
+	{
+		cout << "Loading \"" << argv[ each_image+1 ] << "\"..." << endl;
+		Mat image = imread( argv[ each_image+1 ] , 1 );
+		if ( image.data == NULL )
+			throw runtime_error( "Image couldn't be found!" );
+
+		cout << "Adding channel..." << endl;
+		Mat mixed_image( image.size(), CV_MAKE_TYPE( image.type(), 4 ) );
+		int from_to[] = { 0,0, 1,1, 2,2, };
+		mixChannels( &image, 1, &mixed_image, 1, from_to, 3 );
+
+		cout << "Adding image to frame..." << endl;
+		int left = ( framebuff_mat[ each_image ].cols - mixed_image.cols ) / 2;
+		int top = ( framebuff_mat[ each_image ].rows - mixed_image.rows ) / 2;
+		int cols = mixed_image.cols; int rows = mixed_image.rows;
+		Mat roi = framebuff_mat[ each_image ]( Rect( left, top, cols, rows ) );
+		mixed_image.copyTo( roi );
+	}
+
+	/* Run main application. */
+	cout << "Running main application. Hit enter to change frames. Hit 'q' and then enter to end program..." << endl;
+	{
+		int curr_frame = 0;
+		char val = cin.get();
+		while ( val != 'q' )
+		{
+			cout << "Frame changed..." << endl;
+			curr_frame = ( curr_frame < ( nframes-1 ) ) ? curr_frame+1 : 0;
+			DisplayChangeFrame( &display_obj, curr_frame );
+			val = cin.get();
+		}
+	}
+
+	return 0;
+}
+
+void outbyte (char8 c)
+{
+	cout << c;
+}
+
+char8 inbyte(void)
+{
+	char c;
+	cin >> c;
+	return c;
+}
+
+

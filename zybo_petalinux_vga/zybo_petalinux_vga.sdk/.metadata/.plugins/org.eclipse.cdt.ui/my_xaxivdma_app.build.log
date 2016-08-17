@@ -1,0 +1,8 @@
+08:17:35 **** Incremental Build of configuration Debug for project my_xaxivdma_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+08:17:35 Build Finished (took 109ms)
+

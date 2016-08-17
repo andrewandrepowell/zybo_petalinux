@@ -1,0 +1,384 @@
+21:53:19 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+21:53:23 INFO  : XSDB server has started successfully.
+21:53:23 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+22:11:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:08 INFO  : Jtag cable 'Digilent Zybo 210279759071A' is selected.
+22:11:08 INFO  : 'jtag frequency' command is executed.
+22:11:08 INFO  : Sourcing of '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:11:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+22:11:08 INFO  : System reset is completed.
+22:11:11 INFO  : 'after 3000' command is executed.
+22:11:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1' command is executed.
+22:11:13 INFO  : FPGA configured successfully with bitstream "/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit"
+22:11:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+22:11:13 INFO  : Hardware design information is loaded from '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf'.
+22:11:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+22:11:14 INFO  : 'ps7_init' command is executed.
+22:11:14 INFO  : 'ps7_post_config' command is executed.
+22:11:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:14 INFO  : The application '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:11:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1
+fpga -file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+loadhw /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+dow /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf
+----------------End of Script----------------
+
+22:11:14 INFO  : Memory regions updated for context APU
+22:11:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:14 INFO  : 'con' command is executed.
+22:11:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+con
+----------------End of Script----------------
+
+22:11:14 INFO  : Launch script is exported to file '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/testapp_debug.tcl'
+23:08:19 INFO  : Disconnected from the channel tcfchan#1.
+07:58:59 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+07:59:01 INFO  : XSDB server has started successfully.
+07:59:01 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+07:59:01 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+08:10:38 ERROR : (XSDB Server)/opt/Xilinx/SDK/2016.2/bin/loader: line 164:  3700 Segmentation fault      (core dumped) "$RDI_PROG" "$@"
+
+08:10:38 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+08:10:39 INFO  : XSDB server has started successfully.
+08:23:28 ERROR : (XSDB Server)/opt/Xilinx/SDK/2016.2/bin/loader: line 164:  4315 Segmentation fault      (core dumped) "$RDI_PROG" "$@"
+
+08:23:28 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+08:23:29 INFO  : XSDB server has started successfully.
+13:05:16 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+13:05:18 INFO  : XSDB server has started successfully.
+13:05:18 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+13:05:19 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+13:27:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1470504462000,  Project:1470245454000
+13:27:58 INFO  : Project block_design_wrapper_hw_platform_0's source hardware specification located at /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:28:00 INFO  : Copied contents of /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf into /block_design_wrapper_hw_platform_0/system.hdf.
+13:28:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:28:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fab68de7b7da4abcba603c4e872f3d96-systemd-timesyncd.service-cufkhp"
+
+13:28:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fab68de7b7da4abcba603c4e872f3d96-rtkit-daemon.service-2TZ3jS"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fab68de7b7da4abcba603c4e872f3d96-colord.service-CV7DLN"
+
+13:28:06 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+13:28:07 ERROR : Error updating BSP project MSS files.
+13:28:08 INFO  : Updating hardware inferred compiler options for testapp.
+13:28:08 INFO  : Clearing existing target manager status.
+13:28:10 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:28:10 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+13:28:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+13:28:57 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+13:28:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+13:28:57 INFO  : Unable to read in MSS file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp_bsp/system.mss : null
+13:28:57 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:420)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:500)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:284)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:997)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:1032)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:1007)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1208)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:799)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:675)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:659)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:592)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4481)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1327)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3819)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3430)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: java.lang.IllegalArgumentException: Path must include project and resource name: /testapp_bsp
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2069)
+	at org.eclipse.core.internal.resources.Container.getFolder(Container.java:196)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:169)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+13:29:04 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:29:15 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+13:29:16 INFO  : XSDB server has started successfully.
+13:29:16 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+13:29:16 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+13:32:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:08 INFO  : Jtag cable 'Digilent Zybo 210279759071A' is selected.
+13:32:08 INFO  : 'jtag frequency' command is executed.
+13:32:08 INFO  : Sourcing of '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:32:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:32:08 INFO  : System reset is completed.
+13:32:11 INFO  : 'after 3000' command is executed.
+13:32:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1' command is executed.
+13:32:12 INFO  : FPGA configured successfully with bitstream "/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit"
+13:32:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:32:13 INFO  : Hardware design information is loaded from '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf'.
+13:32:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:32:13 INFO  : 'ps7_init' command is executed.
+13:32:13 INFO  : 'ps7_post_config' command is executed.
+13:32:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:13 INFO  : The application '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:32:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1
+fpga -file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+loadhw /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+dow /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf
+----------------End of Script----------------
+
+13:32:13 INFO  : Memory regions updated for context APU
+13:32:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:32:13 INFO  : 'con' command is executed.
+13:32:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+con
+----------------End of Script----------------
+
+13:32:13 INFO  : Launch script is exported to file '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/testapp_debug.tcl'
+13:33:42 INFO  : Disconnected from the channel tcfchan#1.
+13:33:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:43 INFO  : Jtag cable 'Digilent Zybo 210279759071A' is selected.
+13:33:43 INFO  : 'jtag frequency' command is executed.
+13:33:43 INFO  : Sourcing of '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:33:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:33:43 INFO  : System reset is completed.
+13:33:46 INFO  : 'after 3000' command is executed.
+13:33:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1' command is executed.
+13:33:47 INFO  : FPGA configured successfully with bitstream "/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit"
+13:33:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:33:51 INFO  : Hardware design information is loaded from '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf'.
+13:33:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+13:33:51 INFO  : 'ps7_init' command is executed.
+13:33:51 INFO  : 'ps7_post_config' command is executed.
+13:33:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:51 INFO  : The application '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:33:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1
+fpga -file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+loadhw /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+dow /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf
+----------------End of Script----------------
+
+13:33:51 INFO  : Memory regions updated for context APU
+13:33:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:51 INFO  : 'con' command is executed.
+13:33:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+con
+----------------End of Script----------------
+
+13:33:51 INFO  : Launch script is exported to file '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/testapp_debug.tcl'
+14:19:54 INFO  : Disconnected from the channel tcfchan#2.
+15:45:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:30 INFO  : Jtag cable 'Digilent Zybo 210279759071A' is selected.
+15:45:30 INFO  : 'jtag frequency' command is executed.
+15:45:30 INFO  : Sourcing of '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:45:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:45:30 INFO  : System reset is completed.
+15:45:33 INFO  : 'after 3000' command is executed.
+15:45:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1' command is executed.
+15:45:34 INFO  : FPGA configured successfully with bitstream "/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit"
+15:45:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:45:37 INFO  : Hardware design information is loaded from '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf'.
+15:45:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:45:38 INFO  : 'ps7_init' command is executed.
+15:45:38 INFO  : 'ps7_post_config' command is executed.
+15:45:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:45:38 INFO  : The application '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:45:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1
+fpga -file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+loadhw /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+dow /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf
+----------------End of Script----------------
+
+15:45:38 INFO  : Memory regions updated for context APU
+15:45:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:45:38 INFO  : 'con' command is executed.
+15:45:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+con
+----------------End of Script----------------
+
+15:45:38 INFO  : Launch script is exported to file '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/testapp_debug.tcl'
+15:46:50 INFO  : Disconnected from the channel tcfchan#3.
+15:46:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:51 INFO  : Jtag cable 'Digilent Zybo 210279759071A' is selected.
+15:46:51 INFO  : 'jtag frequency' command is executed.
+15:46:51 INFO  : Sourcing of '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:46:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:46:51 INFO  : System reset is completed.
+15:46:54 INFO  : 'after 3000' command is executed.
+15:46:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1' command is executed.
+15:46:55 INFO  : FPGA configured successfully with bitstream "/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit"
+15:46:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:46:58 INFO  : Hardware design information is loaded from '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf'.
+15:46:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0' command is executed.
+15:46:58 INFO  : 'ps7_init' command is executed.
+15:46:58 INFO  : 'ps7_post_config' command is executed.
+15:46:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:59 INFO  : The application '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:46:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279759071A" && level==0} -index 1
+fpga -file /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/block_design_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+loadhw /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+dow /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/testapp/Debug/testapp.elf
+----------------End of Script----------------
+
+15:46:59 INFO  : Memory regions updated for context APU
+15:46:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:59 INFO  : 'con' command is executed.
+15:46:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279759071A"} -index 0
+con
+----------------End of Script----------------
+
+15:46:59 INFO  : Launch script is exported to file '/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/testapp_debug.tcl'
+15:50:50 INFO  : Disconnected from the channel tcfchan#4.
+16:21:40 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+16:21:41 INFO  : XSDB server has started successfully.
+16:21:41 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+16:21:42 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+15:50:46 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+15:50:48 INFO  : XSDB server has started successfully.
+15:50:48 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+15:50:48 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+19:24:46 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+19:24:48 INFO  : XSDB server has started successfully.
+19:24:48 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+19:24:48 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+10:41:23 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+10:41:24 INFO  : XSDB server has started successfully.
+10:41:25 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+10:41:25 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+11:09:01 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+11:09:03 INFO  : XSDB server has started successfully.
+11:09:03 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+11:09:03 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:07:15 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+14:07:16 INFO  : XSDB server has started successfully.
+14:07:16 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.
+14:07:16 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:10:19 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_vga/petalinux_proj/images/linux/BOOT.bin
+14:10:19 INFO  : Creating new bif file /opt/Xilinx/Projects/zybo_petalinux_vga/petalinux_proj/images/linux/output.bif
+14:10:19 INFO  : Bootgen command execution is done.
+14:20:54 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_vga/petalinux_proj/images/linux/BOOT.bin -w on
+14:20:55 INFO  : Bootgen command execution is done.
+14:24:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1471458230000,  Project:1470504462000
+14:24:09 INFO  : Project block_design_wrapper_hw_platform_0's source hardware specification located at /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+14:24:10 INFO  : Copied contents of /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf into /block_design_wrapper_hw_platform_0/system.hdf.
+14:24:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:24:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-e51a4924ff054654a9bbff6405d1aa9b-systemd-timesyncd.service-nTWkux"
+
+14:24:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-e51a4924ff054654a9bbff6405d1aa9b-colord.service-wyNEGV"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-e51a4924ff054654a9bbff6405d1aa9b-rtkit-daemon.service-DWwOVH"
+
+14:24:18 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+14:24:18 ERROR : Error updating BSP project MSS files.
+14:24:19 INFO  : Updating hardware inferred compiler options for digilent_example_standalone_0.
+14:24:19 INFO  : Clearing existing target manager status.
+14:24:21 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:24:21 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:35:25 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_vga/petalinux_proj/images/linux/BOOT.bin
+14:35:25 INFO  : Creating new bif file /opt/Xilinx/Projects/zybo_petalinux_vga/petalinux_proj/images/linux/output.bif
+14:35:25 INFO  : Bootgen command execution is done.
+16:24:32 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:43:20 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/temp_xsdb_launch_script.tcl
+16:43:22 INFO  : XSDB server has started successfully.
+16:43:22 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/block_design_wrapper.hdf.

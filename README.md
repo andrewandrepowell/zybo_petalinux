@@ -38,6 +38,14 @@ This project also takes advantage of the ADI AXI I2S core taken from the Digilen
 
 Finally, ( with a great deal of effort ) a boot file is generated so that the entire image ( including bitstream ) can be loaded at startup.
 
- 
+////////////////////////
+// zybo_petalinux_vga //
+////////////////////////
+
+Video Demonstration Link: https://youtu.be/uAeAvn65sWQ
+
+Apart from the demonstration applications themselves, there are few differences between the vga project and the last few projects. All the development of the Linux applications are done with the SDK. So, the source code and respective application projects can be found under the "zybo_petalinux_vga/zybo_petalinux_vga.sdk" folder. The binary and images are placed in the "zybo_petalinux/zybo_petalinux_vga/petalinux_proj/components/apps/demos" application. The demo applications can be found in "/demos/" in the root file system.
+
+There are actually three different demonstration applications, all of which demonstrate how the AXI VDMA and the AXI Display Port can be utilized to drive the VGA ( or the HDMI ) interface. "digilent_example_linux_0.elf" runs a ported version of the example found in the Digilent Base Example. "my_example_linux_0.elf" runs a similar but different application that allows the user to switch among three different frame buffers defined for the AXI Display Port driver. "opencv_linux_0.elf" runs an OpenCV application that allows the user to switch up to three different images. The images in the "/demos/" folder are either jpeg or png. Please note, for the applications "my_example_linux_0.elf" and "opencv_linux_0.elf", a resolution of 1280x720 is configured. This resolution worked well with the monitor that was used to test the applications, however it may be necessary to change the resolution for other monitors!
 
 

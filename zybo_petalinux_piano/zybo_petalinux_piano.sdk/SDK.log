@@ -38,3 +38,6 @@
 10:19:17 INFO  : Bootgen command execution is done.
 10:59:43 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_piano/zybo_petalinux_piano.sdk/BOOT.bin -w on
 10:59:43 INFO  : Bootgen command execution is done.
+20:28:50 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.sdk/temp_xsdb_launch_script.tcl
+20:28:51 INFO  : XSDB server has started successfully.
+20:28:58 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_piano/zybo_petalinux_piano.sdk/block_design_wrapper.hdf.
