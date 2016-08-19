@@ -1,19 +1,19 @@
 src/main.o src/main.o: ../src/main.cc \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/display_ctrl.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_types.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/vga_modes.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_hw.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_io.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_i.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xdebug.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xstatus.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_assert.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/display_ctrl.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_types.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/vga_modes.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_hw.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_io.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_i.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xdebug.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xstatus.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_assert.h \
  ../src/linuxmmap.h ../src/linuxmisc.h \
- /opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h \
+ /opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h \
  /opt/opencv-3.1.0/modules/core/include/opencv2/core/core.hpp \
  /opt/opencv-3.1.0/modules/core/include/opencv2/core.hpp \
  /opt/opencv-3.1.0/modules/core/include/opencv2/core/cvdef.h \
@@ -48,37 +48,37 @@ src/main.o src/main.o: ../src/main.cc \
  /opt/opencv-3.1.0/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h \
  /opt/opencv-3.1.0/modules/videoio/include/opencv2/videoio/videoio_c.h
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/display_ctrl.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/display_ctrl.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_types.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_types.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/vga_modes.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/vga_modes.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_hw.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_hw.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_io.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_io.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xparameters.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_i.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xaxivdma_i.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xdebug.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xdebug.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xstatus.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xstatus.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_assert.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_assert.h:
 
 ../src/linuxmmap.h:
 
 ../src/linuxmisc.h:
 
-/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h:
+/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx/xil_printf.h:
 
 /opt/opencv-3.1.0/modules/core/include/opencv2/core/core.hpp:
 

@@ -1,0 +1,38 @@
+07:34:12 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+07:34:16 INFO  : XSDB server has started successfully.
+07:34:16 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+13:52:05 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+13:52:06 INFO  : XSDB server has started successfully.
+13:52:06 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+13:52:06 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:30:28 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+14:30:29 INFO  : XSDB server has started successfully.
+14:30:29 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+14:30:29 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:31:42 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+14:31:43 INFO  : XSDB server has started successfully.
+14:31:43 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+14:31:43 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:34:55 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+14:34:56 INFO  : XSDB server has started successfully.
+14:34:56 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+14:34:57 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:35:59 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+14:36:00 INFO  : XSDB server has started successfully.
+14:36:00 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+14:36:00 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+14:39:10 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+14:39:12 INFO  : XSDB server has started successfully.
+14:39:12 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+14:39:12 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+16:53:26 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+16:53:27 INFO  : XSDB server has started successfully.
+16:53:27 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+16:53:28 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+07:30:42 INFO  : Launching XSDB server: xsdb -n -interactive /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/temp_xsdb_launch_script.tcl
+07:30:44 INFO  : XSDB server has started successfully.
+07:30:44 INFO  : Processing command line option -hwspec /opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/block_design_wrapper.hdf.
+07:30:44 INFO  : Checking for hwspec changes in the project block_design_wrapper_hw_platform_0.
+08:13:17 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /opt/Xilinx/Projects/zybo_petalinux_webcam/petalinux_proj/images/linux/BOOT.bin
+08:13:17 INFO  : Creating new bif file /opt/Xilinx/Projects/zybo_petalinux_webcam/petalinux_proj/images/linux/output.bif
+08:13:17 INFO  : Bootgen command execution is done.

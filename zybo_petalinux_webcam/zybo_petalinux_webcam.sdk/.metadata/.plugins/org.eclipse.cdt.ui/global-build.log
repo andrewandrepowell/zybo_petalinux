@@ -1,0 +1,630 @@
+16:02:03 **** Clean-only build of configuration Debug for project test_display_0 ****
+make clean 
+rm -rf  ./src/main.d  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o  ./src/xilinx/display_ctrl.d ./src/xilinx/display_demo.d ./src/xilinx/xaxivdma.d ./src/xilinx/xaxivdma_channel.d ./src/xilinx/xaxivdma_g.d ./src/xilinx/xaxivdma_intr.d ./src/xilinx/xaxivdma_selftest.d ./src/xilinx/xaxivdma_sinit.d ./src/xilinx/xil_assert.d ./src/xilinx/xil_io.d ./src/xilinx/xil_printf.d  ./src/linuxmmap.d  test_display_0.elf.size  test_display_0.elf
+ 
+16:02:03 **** Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/xilinx/display_ctrl.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/display_ctrl.o" -MMD -MP -MF"src/xilinx/display_ctrl.d" -MT"src/xilinx/display_ctrl.o" -o "src/xilinx/display_ctrl.o" "../src/xilinx/display_ctrl.c"
+Finished building: ../src/xilinx/display_ctrl.c
+ 
+Building file: ../src/xilinx/display_demo.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/display_demo.o" -MMD -MP -MF"src/xilinx/display_demo.d" -MT"src/xilinx/display_demo.o" -o "src/xilinx/display_demo.o" "../src/xilinx/display_demo.c"
+Finished building: ../src/xilinx/display_demo.c
+ 
+Building file: ../src/xilinx/xaxivdma.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma.o" -MMD -MP -MF"src/xilinx/xaxivdma.d" -MT"src/xilinx/xaxivdma.o" -o "src/xilinx/xaxivdma.o" "../src/xilinx/xaxivdma.c"
+Finished building: ../src/xilinx/xaxivdma.c
+ 
+Building file: ../src/xilinx/xaxivdma_channel.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma_channel.o" -MMD -MP -MF"src/xilinx/xaxivdma_channel.d" -MT"src/xilinx/xaxivdma_channel.o" -o "src/xilinx/xaxivdma_channel.o" "../src/xilinx/xaxivdma_channel.c"
+Finished building: ../src/xilinx/xaxivdma_channel.c
+ 
+Building file: ../src/xilinx/xaxivdma_g.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma_g.o" -MMD -MP -MF"src/xilinx/xaxivdma_g.d" -MT"src/xilinx/xaxivdma_g.o" -o "src/xilinx/xaxivdma_g.o" "../src/xilinx/xaxivdma_g.c"
+Finished building: ../src/xilinx/xaxivdma_g.c
+ 
+Building file: ../src/xilinx/xaxivdma_intr.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma_intr.o" -MMD -MP -MF"src/xilinx/xaxivdma_intr.d" -MT"src/xilinx/xaxivdma_intr.o" -o "src/xilinx/xaxivdma_intr.o" "../src/xilinx/xaxivdma_intr.c"
+Finished building: ../src/xilinx/xaxivdma_intr.c
+ 
+Building file: ../src/xilinx/xaxivdma_selftest.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma_selftest.o" -MMD -MP -MF"src/xilinx/xaxivdma_selftest.d" -MT"src/xilinx/xaxivdma_selftest.o" -o "src/xilinx/xaxivdma_selftest.o" "../src/xilinx/xaxivdma_selftest.c"
+Finished building: ../src/xilinx/xaxivdma_selftest.c
+ 
+Building file: ../src/xilinx/xaxivdma_sinit.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xaxivdma_sinit.o" -MMD -MP -MF"src/xilinx/xaxivdma_sinit.d" -MT"src/xilinx/xaxivdma_sinit.o" -o "src/xilinx/xaxivdma_sinit.o" "../src/xilinx/xaxivdma_sinit.c"
+Finished building: ../src/xilinx/xaxivdma_sinit.c
+ 
+Building file: ../src/xilinx/xil_assert.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xil_assert.o" -MMD -MP -MF"src/xilinx/xil_assert.d" -MT"src/xilinx/xil_assert.o" -o "src/xilinx/xil_assert.o" "../src/xilinx/xil_assert.c"
+../src/xilinx/xil_assert.c: In function ‘void XNullHandler(void*)’:
+../src/xilinx/xil_assert.c:145:24: warning: statement has no effect [-Wunused-value]
+  (void *) NullParameter;
+                        ^
+Finished building: ../src/xilinx/xil_assert.c
+ 
+Building file: ../src/xilinx/xil_io.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xil_io.o" -MMD -MP -MF"src/xilinx/xil_io.d" -MT"src/xilinx/xil_io.o" -o "src/xilinx/xil_io.o" "../src/xilinx/xil_io.c"
+Finished building: ../src/xilinx/xil_io.c
+ 
+Building file: ../src/xilinx/xil_printf.c
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/xilinx/xil_printf.o" -MMD -MP -MF"src/xilinx/xil_printf.d" -MT"src/xilinx/xil_printf.o" -o "src/xilinx/xil_printf.o" "../src/xilinx/xil_printf.c"
+../src/xilinx/xil_printf.c: In function ‘void outnum(s32, s32, params_s*)’:
+../src/xilinx/xil_printf.c:96:13: warning: unused variable ‘cp’ [-Wunused-variable]
+     charptr cp;
+             ^
+Finished building: ../src/xilinx/xil_printf.c
+ 
+Building file: ../src/linuxmmap.cpp
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/linuxmmap.o" -MMD -MP -MF"src/linuxmmap.d" -MT"src/linuxmmap.o" -o "src/linuxmmap.o" "../src/linuxmmap.cpp"
+Finished building: ../src/linuxmmap.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2825654	  33492	 623624	3482770	 352492	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:30:31 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2817674	  33492	 623624	3474790	 350566	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:34:06 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816902	  33492	 623624	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:35:31 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816902	  33492	 623624	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:35:35 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816902	  33492	 623624	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:35:48 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:71:11: error: ‘cv::Size’ has no member named ‘set’
+  reso_obj.set(CV_CAP_PROP_FRAME_WIDTH,640);
+           ^
+../src/main.cc:72:11: error: ‘cv::Size’ has no member named ‘set’
+  reso_obj.set(CV_CAP_PROP_FRAME_HEIGHT,480);
+           ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:32: recipe for target 'src/main.o' failed
+16:36:02 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816958	  33492	 623624	3474074	 35029a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:36:16 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816330	  33492	 623624	3473446	 350026	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:36:55 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816330	  33492	 623624	3473446	 350026	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:37:58 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816274	  33492	 623624	3473390	 34ffee	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:38:08 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816902	  33492	 623624	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:38:17 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816958	  33492	 623624	3474074	 35029a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:38:29 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816958	  33492	 623624	3474074	 35029a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:38:59 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816902	  33492	 623624	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:40:24 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816958	  33492	 623624	3474074	 35029a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:40:50 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816330	  33492	 623624	3473446	 350026	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:41:25 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816330	  33492	 623624	3473446	 350026	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:42:15 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816282	  33492	 623688	3473462	 350036	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:42:32 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816282	  33492	 623688	3473462	 350036	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:43:49 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:144:52: error: ‘mixed_image’ was not declared in this scope
+    int left = ( framebuff_mat[ curr_frame ].cols - mixed_image.cols ) / 2;
+                                                    ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:32: recipe for target 'src/main.o' failed
+16:44:10 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816690	  33492	 623688	3473870	 3501ce	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:44:22 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816690	  33492	 623688	3473870	 3501ce	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:45:37 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816814	  33492	 623688	3473994	 35024a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+16:55:59 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816814	  33492	 623688	3473994	 35024a	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+07:33:31 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816838	  33492	 623688	3474018	 350262	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+07:36:11 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function ‘int main()’:
+../src/main.cc:145:3: error: ‘Rec’ was not declared in this scope
+   Rec roi_rec(
+   ^
+src/subdir.mk:32: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+07:36:20 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816870	  33492	 623688	3474050	 350282	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+07:36:38 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816686	  33492	 623688	3473866	 3501ca	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+07:41:45 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816686	  33492	 623688	3473866	 3501ca	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+08:01:26 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816686	  33492	 623688	3473866	 3501ca	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+08:01:52 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816686	  33492	 623688	3473866	 3501ca	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 
+08:10:04 **** Auto Build of configuration Debug for project test_display_0 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM v7 Linux g++ compiler
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_webcam/zybo_petalinux_webcam.sdk/test_display_0/src/xilinx" -I/opt/opencv-3.1.0/modules/video/include -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: test_display_0.elf
+Invoking: ARM v7 Linux g++ linker
+arm-linux-gnueabihf-g++ -L/opt/opencv-armv7/lib -L/opt/opencv-armv7/3rdparty/lib -o "test_display_0.elf"  ./src/xilinx/display_ctrl.o ./src/xilinx/display_demo.o ./src/xilinx/xaxivdma.o ./src/xilinx/xaxivdma_channel.o ./src/xilinx/xaxivdma_g.o ./src/xilinx/xaxivdma_intr.o ./src/xilinx/xaxivdma_selftest.o ./src/xilinx/xaxivdma_sinit.o ./src/xilinx/xil_assert.o ./src/xilinx/xil_io.o ./src/xilinx/xil_printf.o  ./src/linuxmmap.o ./src/main.o   -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -lopencv_imgproc -lopencv_photo -lopencv_video -lopencv_features2d -lopencv_objdetect -lopencv_shape -lopencv_core -lopencv_ml -llibtiff -llibwebp -lIlmImf -llibpng -llibjpeg -llibjasper -lzlib -lpthread -ldl -lrt
+Finished building target: test_display_0.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size test_display_0.elf  |tee "test_display_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+2816686	  33492	 623688	3473866	 3501ca	test_display_0.elf
+Finished building: test_display_0.elf.size
+ 

@@ -1,8 +1,8 @@
-14:02:31 **** Auto Build of configuration Debug for project opencv_linux_0 ****
+17:18:51 **** Auto Build of configuration Debug for project opencv_linux_0 ****
 make all 
 Building file: ../src/main.cc
 Invoking: ARM v7 Linux g++ compiler
-arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx" -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -I"/opt/Xilinx/Projects/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/opencv" -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+arm-linux-gnueabihf-g++ -Wall -O0 -I"/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/xilinx" -I/opt/opencv-3.1.0/modules/imgproc/include -I/opt/opencv-3.1.0/modules/videoio/include -I/opt/opencv-3.1.0/modules/imgcodecs/include -I/opt/opencv-3.1.0/modules/highgui/include -I/opt/opencv-3.1.0/modules/core/include -I"/opt/Xilinx/Projects/zybo_petalinux/zybo_petalinux_vga/zybo_petalinux_vga.sdk/opencv_linux_0/src/opencv" -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
 Finished building: ../src/main.cc
  
 Building target: opencv_linux_0.elf
@@ -17,5 +17,5 @@ arm-linux-gnueabihf-size opencv_linux_0.elf  |tee "opencv_linux_0.elf.size"
 Finished building: opencv_linux_0.elf.size
  
 
-14:02:32 Build Finished (took 1s.44ms)
+17:18:52 Build Finished (took 1s.326ms)
 

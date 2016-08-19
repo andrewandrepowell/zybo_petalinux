@@ -94,7 +94,6 @@ int main( int argc, char** argv )
 		if ( Status!= XST_SUCCESS )
 			throw runtime_error( "The display driver wasn't properly configured." );
 
-
 		/* Set the resolution. */
 		DisplaySetMode( &display_obj, &VMODE_1280x720 );
 
